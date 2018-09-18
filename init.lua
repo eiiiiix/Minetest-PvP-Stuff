@@ -46,6 +46,13 @@ minetest.register_node("pvpcrap:segmented_floor", {
     groups = {choppy=1},
 })
 
+minetest.register_node("pvpcrap:flag", {
+	description = "The flag of Tari, the greatest nation!",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag.png"},
+})
+
 minetest.register_node("pvpcrap:flag_0", {
 	description = "Planeptunes Flag",
 	drawtype = "mesh",
