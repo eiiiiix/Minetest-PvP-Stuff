@@ -20,26 +20,63 @@ minetest.register_tool("pvpcrap:preg_stick", {
 	sound = {breaks = "default_tool_breaks"},
 })
 
-	minetest.register_node("pvpcrap:flag_0", {
-		description = "Planeptunes Flag",
-		drawtype = "mesh",
-		mesh = "flag.obj",
-		tiles = {"flag_0.png"},
-	})
+minetest.register_tool("pvpcrap:fork_spoon", {
+	description = "Is it a fork or a spoon?",
+	inventory_image = "spork.png",
+	tool_capabilities = {
+		full_punch_interval = 0.5,
+		max_drop_level=0,
+		damage_groups = {fleshy=2},
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
 
-	minetest.register_node("pvpcrap:flag_1", {
-		description = "Notsee Hermany's Flag",
-		drawtype = "mesh",
-		mesh = "flag.obj",
-		tiles = {"flag_1.png"},
-	})
+minetest.register_node("pvpcrap:azurite_slabs", {
+    description = "Azurite Slabs",
+    light_source = 1,
+    tiles = {"azurite_slabs.png"},
+})
 
-	minetest.register_node("pvpcrap:flag_2", {
-		description = "Trumps Flag",
-		drawtype = "mesh",
-		mesh = "flag.obj",
-		tiles = {"flag_2.png"},
-	})
+minetest.register_node("pvpcrap:test", {
+	description = "Model Test Block",
+	drawtype = "mesh",
+	mesh = "hollow_slab.obj",
+	tiles = {"test.png"},
+})
+
+minetest.register_node("pvpcrap:flag_0", {
+	description = "Planeptunes Flag",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag_0.png"},
+})
+
+minetest.register_node("pvpcrap:flag_1", {
+	description = "Notsee Hermany's Flag",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag_1.png"},
+})
+
+minetest.register_node("pvpcrap:flag_2", {
+	description = "Trumps Flag",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag_2.png"},
+})
+
+minetest.register_node("pvpcrap:flag_3", {
+	description = "The Minetest Flag",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag_3.png"},
+})
+
+minetest.register_chatcommand("eix", {
+    func = function(name, param)
+        return true, "Join Eix's Minetest Mods Discord server! https://discord.gg/V3Ymknj!"
+    end
+})
 
 --weapon template
 --minetest.register_tool("pvpcrap:", {
