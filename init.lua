@@ -35,13 +35,15 @@ minetest.register_node("pvpcrap:azurite_slabs", {
     description = "Azurite Slabs",
     light_source = 1,
     tiles = {"azurite_slabs.png"},
+    groups = {cracky=1},
 })
 
-minetest.register_node("pvpcrap:test", {
-	description = "Model Test Block",
+minetest.register_node("pvpcrap:segmented_floor", {
+	description = "Segmented Fog Flooring",
 	drawtype = "mesh",
 	mesh = "hollow_slab.obj",
 	tiles = {"test.png"},
+    groups = {choppy=1},
 })
 
 minetest.register_node("pvpcrap:flag_0", {
@@ -70,6 +72,13 @@ minetest.register_node("pvpcrap:flag_3", {
 	drawtype = "mesh",
 	mesh = "flag.obj",
 	tiles = {"flag_3.png"},
+})
+
+minetest.register_node("pvpcrap:flag_4", {
+	description = "Google Chrome Flag",
+	drawtype = "mesh",
+	mesh = "flag.obj",
+	tiles = {"flag_4.png"},
 })
 
 minetest.register_chatcommand("eix", {
