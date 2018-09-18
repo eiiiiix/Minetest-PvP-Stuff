@@ -1,2 +1,2 @@
-# Minetest-PvP-Stuff
-meme shits
+WiP
+install it by creating a new folder named "pvpcrap" in your mods folder then copy the fies from this repo in
